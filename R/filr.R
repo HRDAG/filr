@@ -6,11 +6,10 @@ pth <- function(location, is_dep = TRUE) {
     if (is_dep && !file.exists(full_path))
         stop("missing dependency: ", location)
 
-    if (!!is_dep && !dir.exists(dirname(full_path)))
+    if (!is_dep && !dir.exists(dirname(full_path)))
         stop("missing directory: ", dirname(full_path))
 
     structure(here::here(location), 
-              is_dep = is_dep,
               class = "pth")
 }
 
