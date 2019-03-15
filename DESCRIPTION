@@ -1,0 +1,13 @@
+Package: filr
+Title: Manage the file metadata in R scripts
+Version: 0.0.0.9000
+Authors@R: c(
+    person(given = "Tarak", family = "Shah",
+           role = c("aut", "cre"), email = "tarak@hrdag.org"),
+    person(given = "Patrick", family = "Ball", role = "aut"))
+Description: Manage file metadata in R scripts
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    here
