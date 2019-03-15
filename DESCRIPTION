@@ -11,3 +11,5 @@ Encoding: UTF-8
 LazyData: true
 Imports: 
     here
+Suggests: 
+    testthat
